@@ -17,7 +17,7 @@ func main() {
     var handler telnet.Handler = MainHandler{}
     fmt.Println("start server")
     go func() {
-        err := telnet.ListenAndServe(":23", handler)
+        err := telnet.ListenAndServe(":4545", handler)
         if nil != err {
             panic(err)
         }
